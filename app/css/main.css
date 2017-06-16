@@ -25,6 +25,8 @@ p, img {
   font-weight: 400;
   line-height: 12px;
   margin-top: 18px; }
+  .top-header__phone__number a {
+    color: #929292; }
 
 .top-header__widget__search__icon {
   margin-top: 16px;
