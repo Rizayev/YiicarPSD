@@ -148,7 +148,9 @@ p, img {
 .search-panel__box__city,
 .search-panel__box__model,
 .search-panel__box__condition,
-.search-panel__box__year {
+.search-panel__box__year,
+.search-panel__box__price,
+.search-panel__box__mileage {
   width: 177px;
   height: 34px;
   -webkit-border-radius: 5px;
@@ -164,6 +166,11 @@ p, img {
 
 .search-panel__box__condition {
   width: 155px; }
+
+.search-panel__box__price,
+.search-panel__box__mileage {
+  width: 127px;
+  display: inline-block; }
 
 .search-panel__box__year {
   width: 75px;
