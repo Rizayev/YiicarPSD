@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="app/sass/main.sass"/>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -62,7 +63,95 @@
     </h2>
 </div>
 <div class="search-panel">
+    <div class="container">
+        <div class="search-panel__box">
+            <h3 class="search-panel__box__h3">Vyberte si svůj vůz</h3>
 
+            <div class="dropdown">
+
+                <form action="#" method="post">
+                    <div class="top">
+                        <div class="form-dropdown">
+                            <label for="form-state">Stát</label>
+                            <select id="form-state" class="form-control search-panel__box__state">
+                                <option value="" disabled selected>Select your option</option>
+                                <option data-content="<i class='glyphicon glyphicon-cutlery'></i>">-</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-dropdown">
+                            <label for="form-city">Okres</label>
+                            <select id="form-city" class="form-control search-panel__box__city">
+                                <option value="" disabled selected>Select your option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-dropdown">
+                            <label for="form-condition">Stav</label>
+                            <select id="form-condition" class="form-control search-panel__box__condition">
+                                <option value="" disabled selected>Nevybráno</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <div class="form-dropdown">
+                            <label for="form-mark">Značka</label>
+                            <select id="form-mark" class="form-control search-panel__box__state">
+                                <option value="" disabled selected>Select your option</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-dropdown">
+                            <label for="form-model">Model</label>
+
+                            <select id="form-model" class="form-control search-panel__box__model">
+                                <option value="" disabled selected>Select your option</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-dropdown">
+                            <label for="form-year__do">Rok výroby</label>
+
+                            <select id="form-year__od" class="form-control search-panel__box__year">
+                                <option value="" disabled selected>od</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <select id="form-year__do" class="form-control search-panel__box__year">
+                                <option value="" disabled selected>do</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="search-panel__box__submit">21 149 aut</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="features-auto">
@@ -88,5 +177,8 @@
 <div class="footer">
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
