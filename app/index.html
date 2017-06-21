@@ -53,7 +53,7 @@
                 </ul>
             </div>
             <div class="col-md-2">
-                <button class="header--sell__btn">+ Prodat auto</button>
+                <button class="header--sell__btn" data-toggle="modal" data-target="#popup">+ Prodat auto</button>
             </div>
         </div>
     </div>
@@ -186,7 +186,69 @@
                             </select>
                         </div>
                     </div>
-
+                    <div class="more-down hidden">
+                        <div class="form-dropdown">
+                            <label for="form-mark">Převodovka</label>
+                            <select id="form-mark" class="form-control search-panel__box__state">
+                                <option value="" disabled selected>Select your option</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-dropdown">
+                            <label for="form-mark">Palivo</label>
+                            <select id="form-mark" class="form-control search-panel__box__state">
+                                <option value="" disabled selected>Select your option</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-dropdown">
+                            <label for="form-mark">Emise</label>
+                            <select id="form-mark" class="form-control search-panel__box__state">
+                                <option value="" disabled selected>Select your option</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-dropdown">
+                            <label for="form-mark">Spotřeba l/100km</label>
+                            <select id="form-mark" class="form-control search-panel__box__state">
+                                <option value="" disabled selected>Select your option</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-dropdown">
+                            <label for="form-mark">Karoserie</label>
+                            <select id="form-mark" class="form-control search-panel__box__state">
+                                <option value="" disabled selected>Select your option</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-dropdown">
+                            <label for="form-mark">Počet dveří</label>
+                            <select id="form-mark" class="form-control search-panel__box__state">
+                                <option value="" disabled selected>Select your option</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p class="search-panel__box__more">Ještě <i class="fa fa-angle-down" aria-hidden="true"></i></p>
                     <button class="search-panel__box__submit">21 149 aut</button>
                 </form>
             </div>
@@ -530,9 +592,41 @@
     </div>
 </div>
 
+
+
+<!-- POPUP -->
+<div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <h4 class="modal-title" id="myModalLabel">Přihlásit se</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/cross-out-copy.png" alt=""></button>
+            <button class="facebook-entry">Přihlásit přes facebook</button>
+            <p class="nebo">nebo</p>
+
+            <form action="#">
+                <div class="username">
+                    <label for="username">Uživatelské jméno</label>
+                    <a href="#" class="pull-right">Vytvořit účet</a>
+                    <input type="text" class="form-control" id="username" placeholder=" ">
+                </div>
+
+                <div class="password">
+                    <label for="password">Heslo</label>
+                    <a href="#" class="pull-right">Zapomněli jste heslo?</a>
+                    <input type="password" class="form-control" id="password" placeholder=" ">
+                </div>
+
+
+                <button type="submit">Přihlásit se</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/custom.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </body>
 </html>

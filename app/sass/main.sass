@@ -104,7 +104,7 @@ p,img
 
 .search-panel__box
   width: 894px
-  height: 305px
+  min-height: 305px
   margin: 0 auto
   margin-top: -80px
   box-shadow: 2px 3px 16px rgba(49, 49, 49, 0.1)
@@ -116,11 +116,11 @@ p,img
 .search-panel__box__h3
   color: #4f4f4f
   font-size: 25px
-  font-weight: 500
+  font-weight: 400
   line-height: 12px
 
   text-align: center
-  padding-top: 23px
+  padding-top: 24px
   margin-bottom: 23px
 .search-panel__box form
   padding-left: 30px
@@ -165,6 +165,14 @@ p,img
 .search-panel__box__year
   width: 75px
   display: inline-block
+.search-panel__box__more
+  font-size: 13px
+  text-align: center
+  color: #4f4f4f
+  margin-bottom: 15px
+  cursor: pointer
+  .fa
+    font-weight: 400
 .search-panel__box__submit
   width: 170px
   height: 40px
@@ -177,7 +185,7 @@ p,img
   padding-top: 5px
   color: #ffffff
   font-size: 15px
-  font-weight: bold
+  font-weight: 400
   text-transform: uppercase
 
 .search-panel__box .form-dropdown
@@ -370,3 +378,79 @@ p,img
   top: -30px
   right: 0
   cursor: pointer
+
+
+  //MODAL POPUP
+#popup
+  .modal-content
+    width: 330px
+    margin: 0 auto
+    height: 362px
+    border-radius: 3px
+    background-color: #fcfcfc
+  h4
+    color: #4f4f4f
+    font-family: 'Roboto', sans-serif
+    font-size: 25px
+    font-weight: 400
+    line-height: 12px
+    text-align: center
+    padding-top: 24px
+    margin-bottom: 32px
+  .close
+    position: absolute
+    top: 10px
+    right: 10px
+    opacity: 1
+  .facebook-entry
+    color: #ffffff
+    font-size: 15px
+    font-weight: 400
+    line-height: 0
+    text-transform: uppercase
+    border: none
+    width: 270px
+    height: 40px
+    display: block
+    margin: 0 auto
+    border-radius: 5px
+    background-color: #3b5998
+    margin-bottom: 12px
+  p.nebo
+    text-align: center
+    color: #929292
+    font-size: 13px
+    font-weight: 400
+  form
+    width: 270px
+    margin: 0 auto
+    display: block
+    label
+      color: #4f4f4f
+      font-size: 13px
+      font-weight: 500
+    label + a
+      color: #a9a9a9
+      font-size: 13px
+      font-weight: 500
+    input
+      height: 34px
+      border-radius: 5px
+      margin-bottom: 17px
+    button
+      color: #ffffff
+      font-size: 15px
+      font-weight: 400
+      text-transform: uppercase
+
+      width: 270px
+      height: 40px
+      display: block
+      margin: 0 auto
+      border: none
+      line-height: 0
+      border-radius: 5px
+      background-color: #4caf50
+.modal-backdrop.in
+  opacity: 0.9
+  //MODAL POPUP
