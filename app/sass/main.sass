@@ -382,12 +382,14 @@ p,img
 
   //MODAL POPUP
 #popup
-  .modal-content
+  .modal-content,.modal-dialog
     width: 330px
     margin: 0 auto
     height: 362px
     border-radius: 3px
     background-color: #fcfcfc
+  .modal-dialog
+    margin-top: 30px
   h4
     color: #4f4f4f
     font-family: 'Roboto', sans-serif
@@ -416,6 +418,8 @@ p,img
     border-radius: 5px
     background-color: #3b5998
     margin-bottom: 12px
+    &:hover, &:active
+      background-color: #4a6bb1
   p.nebo
     text-align: center
     color: #929292
@@ -433,6 +437,9 @@ p,img
       color: #a9a9a9
       font-size: 13px
       font-weight: 500
+      text-decoration: none
+      &:hover
+        color: #4f4f4f
     input
       height: 34px
       border-radius: 5px
@@ -451,6 +458,9 @@ p,img
       line-height: 0
       border-radius: 5px
       background-color: #4caf50
+      &:hover,&:active
+        background-color: #66bb6a
+
     .form-control-feedback
       pointer-events: visible
       cursor: pointer
