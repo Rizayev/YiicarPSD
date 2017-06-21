@@ -486,6 +486,9 @@ p, img {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     background-color: #4caf50; }
+  #popup form .form-control-feedback {
+    pointer-events: visible;
+    cursor: pointer; }
 
 .modal-backdrop.in {
   opacity: 0.9; }

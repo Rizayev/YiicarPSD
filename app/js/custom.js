@@ -20,5 +20,14 @@ $(document).ready(function() {
         return false;
     });
 //    SMOOTH SCROLL
+
+//    POPUP
+    $('#popup .glyphicon-eye-open').click(function () {
+        $(this).toggleClass('glyphicon-eye-close');
+        $('#popup #password').attr('type', function(index, attr){
+            return attr == 'password' ? 'text' : 'password';
+        });
+    });
+//    POPUP
 });
 
