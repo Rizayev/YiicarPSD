@@ -5,6 +5,8 @@
 
 body
   font-family: 'Roboto', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 p,img
   margin: 0
   padding: 0
@@ -59,6 +61,7 @@ p,img
 .header
   height: 84px
   background-color: #ffffff
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
 .header--logo
   margin-top: 21px
 
@@ -467,3 +470,93 @@ p,img
 .modal-backdrop.in
   opacity: 0.9
   //MODAL POPUP
+
+
+
+.search
+  margin-top: 60px
+  margin-bottom: 300px
+  .breadcrumb>li+li:before
+    content: '-'
+  .breadcrumb
+    background: none
+    margin-bottom: 25px
+    padding-left: 0
+    li a
+      color: #929292
+.search-sidebar
+  width: 270px
+  height: 655px
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+  border-radius: 3px
+  background-color: #fcfcfc
+.car-item
+  border-radius: 3px
+  background-color: #fcfcfc
+  margin-bottom: 11px
+  &:hover
+    box-shadow: 1px 1px 38px rgba(49, 49, 49, 0.1)
+    transition: all 0.3s
+.car-item__img
+
+.car-item__info
+  padding-top: 15px
+  padding-right: 26px
+
+.car-item__top__panel
+.car-item__top__panel__h4
+  color: #4f4f4f
+  font-size: 25px
+  font-weight: 500
+  line-height: 16px
+  margin-bottom: 34px
+  display: inline-block
+  margin-right: 70px
+.car-item__top__panel__links
+  display: inline-block
+  margin-right: 30px
+  &:last-child
+    margin-right: auto
+  li
+    margin-right: 0
+    padding: 0 2px
+    a
+      font-size: 13px
+      font-weight: 400
+      line-height: 12px
+      color: #4f4f4f
+    .active
+      color: #4caf50
+.car-item__model
+  color: #4f4f4f
+  font-size: 17px
+  font-weight: 500
+.car-item__price
+  color: #4caf50
+  font-size: 17px
+  font-weight: 500
+  text-transform: uppercase
+
+.car-item__addinfo
+  color: #929292
+  font-size: 13px
+  font-weight: 400
+.car-item__city
+  color: #929292
+  font-size: 13px
+  font-weight: 400
+.car-item__date
+  color: #929292
+  font-size: 13px
+  font-weight: 500
+.car-item__info__top
+  display: flex
+  justify-content: space-between
+  margin-bottom: 11px
+
+.car_item__info__center
+  margin-bottom: 75px
+
+.car_item__info__bottom
+  display: flex
+  justify-content: space-between
