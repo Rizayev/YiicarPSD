@@ -526,7 +526,21 @@ p, img {
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  background-color: #fcfcfc; }
+  background-color: #fcfcfc;
+  padding-top: 22px;
+  padding-left: 30px; }
+  .search-sidebar form .form-dropdown {
+    margin-bottom: 17px; }
+    .search-sidebar form .form-dropdown label {
+      color: #4f4f4f;
+      font-size: 13px;
+      font-weight: 700; }
+    .search-sidebar form .form-dropdown select {
+      width: 210px;
+      height: 34px;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      color: #929292; }
 
 .car-item {
   -webkit-border-radius: 3px;
