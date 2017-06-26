@@ -521,26 +521,36 @@ p, img {
 
 .search-sidebar {
   width: 270px;
-  height: 655px;
+  min-height: 655px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 3px;
           border-radius: 3px;
   background-color: #fcfcfc;
   padding-top: 22px;
-  padding-left: 30px; }
+  padding-left: 30px;
+  padding-bottom: 30px; }
   .search-sidebar form .form-dropdown {
     margin-bottom: 17px; }
+    .search-sidebar form .form-dropdown .search-panel__box__more {
+      text-align: center;
+      padding-right: 30px;
+      margin-top: 15px; }
     .search-sidebar form .form-dropdown label {
       color: #4f4f4f;
       font-size: 13px;
-      font-weight: 700; }
+      font-weight: 700;
+      display: block; }
     .search-sidebar form .form-dropdown select {
       width: 210px;
       height: 34px;
       -webkit-border-radius: 5px;
               border-radius: 5px;
-      color: #929292; }
+      color: #929292;
+      margin-bottom: 5px; }
+    .search-sidebar form .form-dropdown .form-select__half {
+      display: inline-block;
+      width: 102px; }
 
 .car-hor .car-item {
   -webkit-border-radius: 3px;

@@ -486,24 +486,34 @@ p,img
       color: #929292
 .search-sidebar
   width: 270px
-  height: 655px
+  min-height: 655px
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
   border-radius: 3px
   background-color: #fcfcfc
   padding-top: 22px
   padding-left: 30px
+  padding-bottom: 30px
   form
     .form-dropdown
       margin-bottom: 17px
+      .search-panel__box__more
+        text-align: center
+        padding-right: 30px
+        margin-top: 15px
       label
         color: #4f4f4f
         font-size: 13px
         font-weight: 700
+        display: block
       select
         width: 210px
         height: 34px
         border-radius: 5px
         color: #929292
+        margin-bottom: 5px
+      .form-select__half
+        display: inline-block
+        width: 102px
 
 
 .car-hor
