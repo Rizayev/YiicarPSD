@@ -160,6 +160,7 @@ p, img {
   height: 34px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
+  border: 1px solid #d2d2d2;
   color: #929292;
   font-size: 13px;
   text-align: left;
@@ -746,3 +747,105 @@ p, img {
     background-position-x: 0px;
     padding-left: 24px;
     margin-bottom: 5px; }
+
+.seller-comment {
+  margin-bottom: 100px; }
+
+.seller-comment__h2 {
+  color: #4f4f4f;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  margin-bottom: 65px; }
+
+.seller-comment__text, .seller-comment__text > span {
+  color: #929292;
+  font-weight: 400; }
+
+.morecontent span {
+  display: none; }
+
+.morelink {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  color: #4f4f4f;
+  margin-bottom: 15px;
+  cursor: pointer; }
+
+.contact-seller {
+  margin-bottom: 100px; }
+
+.contact-seller__h2 {
+  color: #4f4f4f;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  margin-bottom: 70px; }
+
+.contact-seller__form {
+  width: 670px;
+  height: 345px;
+  display: block;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fcfcfc;
+  padding-top: 20px; }
+  .contact-seller__form h4 {
+    color: #4f4f4f;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 12px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .contact-seller__form form {
+    margin-left: 25px; }
+    .contact-seller__form form .form-seller {
+      display: inline-block;
+      margin-bottom: 15px; }
+    .contact-seller__form form label {
+      display: block; }
+    .contact-seller__form form input {
+      width: 308px;
+      height: 34px;
+      margin-right: 2px;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border: 1px solid #d2d2d2;
+      background: #fcfcfc;
+      padding-left: 10px;
+      color: #4f4f4f;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 20px; }
+    .contact-seller__form form textarea {
+      width: 620px;
+      height: 108px;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border: 1px solid #d2d2d2;
+      resize: none;
+      padding-top: 10px;
+      padding-left: 10px;
+      color: #4f4f4f;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 20px; }
+    .contact-seller__form form .form-seller__btn {
+      width: 177px;
+      height: 40px;
+      -webkit-box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+              box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      background-color: #4caf50;
+      border: none;
+      line-height: 0;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-right: 25px; }
