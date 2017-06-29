@@ -68,5 +68,15 @@ $(document).ready(function() {
         $(this).prev().toggle();
         return false;
     });
+
+    $('#car-gallery').lightGallery({
+        selector: 'a',
+        download: false,
+    });
 });
 //SHOW MORE LESS
+
+
+ //GALLERY
+
+ //GALLERY
