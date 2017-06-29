@@ -53,10 +53,49 @@ p,img
   line-height: 12px
   text-transform: uppercase
   margin-top: 16px
+  cursor: pointer
   a
     color: #929292
     &:hover
       color: #4F4F4F
+
+.top-header__widget__menu
+  position: relative
+  left: 65px
+  top: 17px
+  z-index: 99
+  display: none
+  ul
+    width: 125px
+    position: absolute
+    list-style-type: none
+    padding: 0
+    margin: 0
+    border-radius: 5px
+    box-shadow: 0 0 7px rgba(49, 49, 49, 0.12)
+    background-color: #fcfcfc
+  &:before
+    position: absolute
+    left: 25%
+    top: -10px
+    width: 20px
+    height: 20px
+    content: ''
+    border-left: 20px solid transparent
+    border-right: 20px solid transparent
+    border-bottom: 20px solid #fff
+  li
+    padding: 7px 0
+    padding-left: 18px
+    a
+      color: #929292
+      font-weight: 500
+      font-size: 13px
+      text-align: center
+  li:last-child
+    background: #f5f5f6
+    span
+      padding-right: 5px
 
 .header
   height: 84px
@@ -472,7 +511,7 @@ p,img
   //MODAL POPUP
 
 
-
+// search result
 .search
   margin-top: 60px
   margin-bottom: 300px
@@ -632,6 +671,7 @@ p,img
     text-transform: uppercase
 
 
+//    single car
 .car-info
   .list-auto
     margin-bottom: 0

@@ -29,6 +29,24 @@ $(document).ready(function() {
         });
     });
 //    POPUP
+
+//    gallery
+    $('#car-gallery').lightGallery({
+        selector: 'a',
+        download: false,
+    });
+//    gallery
+//    popoover
+    $('[data-toggle="popover"]').popover();
+//    popoover
+//    top menu widget
+    $('.top-header__widget__p').mouseenter(function () {
+        $('.top-header__widget__menu').fadeIn();
+    });
+    $('.top-header__widget__menu').mouseleave(function () {
+        $('.top-header__widget__menu').fadeOut();
+    });
+//    top menu widget
 });
 
 
@@ -69,10 +87,6 @@ $(document).ready(function() {
         return false;
     });
 
-    $('#car-gallery').lightGallery({
-        selector: 'a',
-        download: false,
-    });
 });
 //SHOW MORE LESS
 
