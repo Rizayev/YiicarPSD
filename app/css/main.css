@@ -695,6 +695,9 @@ p, img {
 .car-info .list-auto {
   margin-bottom: 0; }
 
+.car-info .header {
+  margin-bottom: 60px; }
+
 .car-content {
   margin-bottom: 100px; }
 
