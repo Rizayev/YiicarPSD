@@ -1061,7 +1061,8 @@ p, img {
   .tab-car .left img {
     width: 180px;
     height: 148px;
-    background: #ccc; }
+    background: #ccc;
+    display: block; }
   .tab-car .right {
     width: 460px;
     padding-top: 15px;
