@@ -41,11 +41,25 @@ $(document).ready(function() {
 //    popoover
 //    top menu widget
     $('.top-header__widget__p').mouseenter(function () {
-        $('.top-header__widget__menu').fadeIn();
+        $('.top-header__widget__menu').show();
     });
     $('.top-header__widget__menu').mouseleave(function () {
-        $('.top-header__widget__menu').fadeOut();
+        $('.top-header__widget__menu').hide();
     });
+
+    $('.tab-car__btn__option').each(function () {
+        $(this).click(function () {
+            $(this).parent().hide();
+            $(this).parent().parent().find('.btn-features').show();
+        });
+
+    });
+
+    // $('#btn-features').mouseleave(function () {
+    //     $(this).hide();
+    //     $('#tab-car__btn__option').parent().fadeIn();
+    // });
+
 //    top menu widget
 });
 
