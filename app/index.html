@@ -61,7 +61,7 @@
             </div>
             <div class="col-md-2">
                 <button class="header--sell__btn" data-toggle="modal" data-target="#popup">+ Prodat auto</button>
-                <button class="header--sell__btn" data-toggle="modal" data-target="#car-sale">+ TEST BUTTON</button>
+                <button class="header--sell__btn" data-toggle="modal" data-target="#my-cars">+ TEST BUTTON</button>
             </div>
         </div>
     </div>
@@ -656,11 +656,11 @@
 </div>
 <!-- POPUP -->
 
-<!--MODAL SALE CAR-->
+<!--MODAL MY CARS -->
 
 
 <!-- Modal -->
-<div class="modal fade" id="car-sale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="my-cars" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
@@ -669,15 +669,30 @@
                 <h4 class="modal-title">Moje garáž</h4>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a class="my-cars" href="#home" aria-controls="home" role="tab" data-toggle="tab">Moje vozy</a></li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Můj tarif</a></li>
-                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Můj profil</a></li>
+                    <li role="presentation" class="active"><a class="my-cars" href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Moje vozy</a></li>
+                    <li role="presentation"><a class="my-tariff" href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">Můj tarif</a></li>
+                    <li role="presentation"><a class="my-profile" href="#tab3" aria-controls="messages" role="tab" data-toggle="tab">Můj profil</a></li>
                     <!--<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>-->
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="home">
+
+                    <div role="tabpanel" class="tab-pane my-cars active" id="tab1">
+
+                        <div class="my-cars__buttons">
+                            <button class="header--sell__btn" data-toggle="modal" data-target="#car-sale">+ Přidat auto</button>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Třídění:  <span>Doporučené vozy</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Veškeré</a></li>
+                                    <li><a href="#">Populární vozy</a></li>
+                                    <li><a href="#">Doporučené vozy</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
                         <div class="tab-cars">
                             <div class="tab-car">
@@ -846,9 +861,139 @@
                         </div>
 
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="profile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea pariatur perferendis perspiciatis possimus quam quis quisquam repellendus soluta totam veniam!</div>
-                    <div role="tabpanel" class="tab-pane" id="messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque aut, cumque deleniti est inventore laboriosam maiores minus officiis optio porro quae, saepe unde! Quas!</div>
-                    <div role="tabpanel" class="tab-pane" id="settings">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolorum ea esse, nulla odio officiis quam repellendus vel! Eius inventore laborum voluptatem. Cum distinctio ducimus ex pariatur repellat sunt suscipit.</div>
+                    <div role="tabpanel" class="tab-pane tariff" id="tab2">
+                        <div class="tariff-text">
+                            <p>Můj tarif: Nejlepší </p>
+                            <span>Můj tarif: Nejlepší </span>
+                        </div>
+                        <div class="tariff-text">
+                            <p>Zostalo volných inzerátů: 7 </p>
+                            <span>Využito: 1  K využití: 1</span>
+                        </div>
+                        <div class="tariff-text">
+                            <p>Místo v sekci "Populární auto": 1</p>
+                            <span>Již používá 2</span>
+                        </div>
+                        <div class="tariff-text">
+                            <p>Místo v sekci "Doporučené vozy": 4</p>
+                            <span>Již používá 5</span>
+                        </div>
+
+                        <button class="tariff-button">Zlepšit tarif</button>
+                    </div>
+                    <div role="tabpanel" class="tab-pane my-profile" id="tab3">
+
+                        <div class="item">
+                            <p  data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+                                Změnit kontaktní údaje
+                                <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
+                            </p>
+                            <div class="collapse" id="collapse1">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+
+                                    <button type="submit">udržet</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p  data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+                                Změnit kontaktní údaje
+                                <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
+                            </p>
+                            <div class="collapse" id="collapse2">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <button type="submit">udržet</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p  data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+                                Změnit kontaktní údaje
+                                <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
+                            </p>
+                            <div class="collapse" id="collapse3">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <button type="submit">udržet</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p  data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+                                Změnit kontaktní údaje
+                                <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
+                            </p>
+                            <div class="collapse" id="collapse4">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <button type="submit">udržet</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p  data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapseExample">
+                                Změnit kontaktní údaje
+                                <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
+                            </p>
+                            <div class="collapse" id="collapse5">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <button type="submit">udržet</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p  data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapseExample">
+                                Smazat účet
+                                <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
+                            </p>
+                            <div class="collapse" id="collapse6">
+                                <p class="my-profile__del_p">Smazání účtu dojde po kliknutí na potvrzovací odkaz zaslaný e-mailem.</p>
+                                <button class="red-btn">smazat účet</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
                 </div>
 
             </div>
@@ -856,8 +1001,41 @@
     </div>
 </div>
 
+<!--MODAL MY CARS-->
 
-<!--MODAL SALE CAR-->
+<!-- POPUP SALE CAR -->
+<div class="modal fade" id="car-sale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <h4 class="modal-title" id="myModalLabel">Přihlásit se</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
+                    src="img/cross-out-copy.png" alt=""></button>
+            <button class="facebook-entry">Přihlásit přes facebook</button>
+            <p class="nebo">nebo</p>
+
+            <form action="#">
+                <div class="username">
+                    <label for="username">Uživatelské jméno</label>
+                    <a href="#" class="pull-right">Vytvořit účet</a>
+                    <input type="text" class="form-control" id="username" placeholder=" ">
+                </div>
+
+                <div class="password form-group has-feedback">
+                    <label for="password">Heslo</label>
+                    <a href="#" class="pull-right">Zapomněli jste heslo?</a>
+                    <input type="password" class="form-control" id="password" data-toggle="password" placeholder=" ">
+                    <!--<input id="password" class="form-control" type="password" value="password"  >-->
+                    <span class="glyphicon glyphicon-eye-open form-control-feedback" aria-hidden="true"></span>
+                </div>
+
+
+                <button type="submit">Přihlásit se</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+<!-- POPUP SALE CAR -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>

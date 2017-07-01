@@ -104,7 +104,13 @@ $(document).ready(function() {
 });
 //SHOW MORE LESS
 
+//my cars sort button
+$(".my-cars__buttons .dropdown-menu li a").click(function(){
+    var selText = $(this).text();
+    $(this).parents('.dropdown').find('.dropdown-toggle span').html(selText);
+});
+//my cars sort button
+$('.my-profile .item p').on('click', function(e) {
+    $(this).find('[class*="angle"]').toggleClass('fa-angle-up fa-angle-down')
+});
 
- //GALLERY
-
- //GALLERY

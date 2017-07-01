@@ -982,15 +982,18 @@ p, img {
               border-radius: 5px;
       border: 1px solid #d2d2d2; }
 
-#car-sale .modal-content, #car-sale .modal-dialog {
+#my-cars .modal-content, #my-cars .modal-dialog {
   width: 705px;
   border: none;
-  height: 1000px;
+  height: auto;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   background-color: #fcfcfc; }
 
-#car-sale .modal-title {
+#my-cars .modal-content {
+  padding-bottom: 40px; }
+
+#my-cars .modal-title {
   color: #4f4f4f;
   padding: 25px 0;
   text-align: center;
@@ -998,19 +1001,61 @@ p, img {
   font-weight: 500;
   line-height: 12px; }
 
-#car-sale .close {
+#my-cars .close {
   position: relative;
   top: 10px;
   right: 10px;
   opacity: 0.9; }
 
-#car-sale .nav {
+#my-cars .header--sell__btn {
   margin-bottom: 30px; }
-  #car-sale .nav li {
+
+#my-cars .my-cars__buttons {
+  margin: 0 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #my-cars .my-cars__buttons .dropdown .dropdown-menu {
+    width: 130px;
+    height: 106px;
+    -webkit-box-shadow: 0 0 7px rgba(49, 49, 49, 0.12);
+            box-shadow: 0 0 7px rgba(49, 49, 49, 0.12);
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #fcfcfc;
+    border-color: #f1f1f1; }
+  #my-cars .my-cars__buttons .dropdown a {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #4f4f4f;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+    #my-cars .my-cars__buttons .dropdown a:hover {
+      text-decoration: none; }
+    #my-cars .my-cars__buttons .dropdown a span {
+      color: #4caf50; }
+    #my-cars .my-cars__buttons .dropdown a i {
+      font-size: 12px; }
+
+#my-cars .nav {
+  margin-bottom: 8px;
+  border: 0px; }
+  #my-cars .nav li {
     border: none;
     -webkit-border-radius: 0px;
             border-radius: 0px; }
-    #car-sale .nav li a {
+    #my-cars .nav li a {
       width: 235px;
       height: 60px;
       border: none;
@@ -1020,26 +1065,33 @@ p, img {
       -webkit-border-radius: 0px;
               border-radius: 0px;
       text-align: center; }
-    #car-sale .nav li .my-cars {
+    #my-cars .nav li .my-cars {
       background: url("../img/car-png_sale.png") no-repeat;
       background-position: 40px 22px; }
+    #my-cars .nav li .my-tariff {
+      background: url("../img/file-png.png") no-repeat;
+      background-position: 60px 20px; }
+    #my-cars .nav li .my-profile {
+      background: url("../img/prolife-png.png") no-repeat;
+      background-position: 55px 20px; }
 
-#car-sale .nav-tabs > li > a {
+#my-cars .nav-tabs > li > a {
   background-color: #f5f5f5;
   border-color: #777777;
+  border: none;
   color: #4b4b4b;
   font-size: 17px;
   text-align: center;
   padding-top: 17px; }
 
-#car-sale .nav-tabs > li.active > a {
+#my-cars .nav-tabs > li.active > a {
   color: #fafafa;
   background-color: #4caf50; }
-  #car-sale .nav-tabs > li.active > a:hover, #car-sale .nav-tabs > li.active > a:focus {
+  #my-cars .nav-tabs > li.active > a:hover, #my-cars .nav-tabs > li.active > a:focus {
     color: #fff;
     background-color: #4caf50; }
 
-#car-sale .nav-tabs > li > a:hover {
+#my-cars .nav-tabs > li > a:hover {
   color: #fff;
   background-color: #4caf50; }
 
@@ -1136,3 +1188,110 @@ p, img {
   .tab-car .glyphicon-pencil {
     margin: 0 5px;
     margin-right: 15px; }
+
+.tariff {
+  padding-top: 20px; }
+
+.tariff-text {
+  text-align: center;
+  margin-bottom: 20px; }
+  .tariff-text p {
+    color: #4f4f4f;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 12px; }
+  .tariff-text span {
+    color: #929292;
+    font-size: 13px; }
+  .tariff-text:first-child p {
+    font-weight: 500; }
+
+.tariff-button {
+  width: 150px;
+  height: 38px;
+  display: block;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+          box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #4caf50;
+  border: none;
+  line-height: 0;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.my-profile {
+  margin-top: 30px; }
+  .my-profile .item {
+    width: 645px;
+    min-height: 55px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 23px;
+    padding-top: 16px;
+    -webkit-box-shadow: 0 0 7px rgba(49, 49, 49, 0.12);
+            box-shadow: 0 0 7px rgba(49, 49, 49, 0.12);
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #fcfcfc;
+    margin-bottom: 10px; }
+    .my-profile .item p {
+      color: #4f4f4f;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 10px;
+      cursor: pointer; }
+    .my-profile .item form label {
+      color: #4f4f4f;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 7px; }
+    .my-profile .item form input {
+      width: 270px;
+      height: 34px;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border: 1px solid #d2d2d2; }
+    .my-profile .item form button {
+      width: 135px;
+      height: 36px;
+      -webkit-box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+              box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      background-color: #4caf50;
+      border: none;
+      color: #ffffff;
+      line-height: 0;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .my-profile .item .red-btn {
+      width: 177px;
+      height: 40px;
+      display: block;
+      margin: 0 auto;
+      -webkit-box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+              box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      background-color: #da3535;
+      border: none;
+      color: #ffffff;
+      line-height: 0;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .my-profile .item .my-profile__del_p {
+      color: #b0b0b0;
+      font-size: 15px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 12px; }
+  .my-profile .collapse {
+    padding-bottom: 20px; }
