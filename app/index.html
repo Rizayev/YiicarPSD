@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/dropzone.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
     <link rel="stylesheet" href="css/main.css">
+
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic-ext"
           rel="stylesheet">
     <title>ProdejVuz</title>
@@ -37,7 +41,7 @@
                     <li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>Odhlásit se</a></li>
                 </ul>
             </div>
-         </div>
+        </div>
 
     </div>
 </div>
@@ -83,7 +87,7 @@
                     <div class="top">
                         <div class="form-dropdown">
                             <label for="form-state">Stát</label>
-                            <select id="form-state" class="form-control search-panel__box__state">
+                            <select id="form-state" class="form-control search-panel__box__state custom">
                                 <option value="" disabled selected>Select your option</option>
                                 <option data-content="<i class='glyphicon glyphicon-cutlery'></i>">-</option>
                                 <option>2</option>
@@ -116,7 +120,7 @@
                         </div>
                         <div class="form-dropdown">
                             <label for="form-price__od">Cena</label>
-                            <select id="form-price__od" class="form-control search-panel__box__price">
+                            <select id="form-price__od" class="form-control search-panel__box__price custom">
                                 <option value="" disabled selected>od</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -124,7 +128,7 @@
                                 <option>4</option>
                                 <option>5</option>
                             </select>
-                            <select id="form-price__do" class="form-control search-panel__box__price">
+                            <select id="form-price__do" class="form-control search-panel__box__price custom">
                                 <option value="" disabled selected>od</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -681,10 +685,13 @@
                     <div role="tabpanel" class="tab-pane my-cars active" id="tab1">
 
                         <div class="my-cars__buttons">
-                            <button class="header--sell__btn" data-toggle="modal" data-target="#car-sale">+ Přidat auto</button>
+                            <button class="header--sell__btn" data-toggle="modal"  >+ Přidat auto </button>
+                            <!--<button class="header&#45;&#45;sell__btn" data-toggle="modal" data-target="#car-sale">+ Přidat auto </button>-->
                             <div class="dropdown">
-                                <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    Třídění:  <span>Doporučené vozy</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="true">
+                                    Třídění: <span>Doporučené vozy</span> <i class="fa fa-angle-down"
+                                                                             aria-hidden="true"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                     <li><a href="#">Veškeré</a></li>
@@ -708,7 +715,8 @@
 
                                     <div class="car_item__info__center">
                                         <p class="car-item__addinfo">2014, 1.8 Benzin, 199 000 km</p>
-                                        <p class="car-item__city"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> Kralovehradecky Kraj</p>
+                                        <p class="car-item__city"><i class="glyphicon glyphicon-map-marker"
+                                                                     aria-hidden="true"></i> Kralovehradecky Kraj</p>
                                     </div>
 
                                     <div class="car_item__info__bottom">
@@ -741,7 +749,8 @@
 
                                     <div class="car_item__info__center">
                                         <p class="car-item__addinfo">2014, 1.8 Benzin, 199 000 km</p>
-                                        <p class="car-item__city"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> Kralovehradecky Kraj</p>
+                                        <p class="car-item__city"><i class="glyphicon glyphicon-map-marker"
+                                                                     aria-hidden="true"></i> Kralovehradecky Kraj</p>
                                     </div>
 
                                     <div class="car_item__info__bottom">
@@ -774,7 +783,8 @@
 
                                     <div class="car_item__info__center">
                                         <p class="car-item__addinfo">2014, 1.8 Benzin, 199 000 km</p>
-                                        <p class="car-item__city"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> Kralovehradecky Kraj</p>
+                                        <p class="car-item__city"><i class="glyphicon glyphicon-map-marker"
+                                                                     aria-hidden="true"></i> Kralovehradecky Kraj</p>
                                     </div>
 
                                     <div class="car_item__info__bottom">
@@ -807,7 +817,8 @@
 
                                     <div class="car_item__info__center">
                                         <p class="car-item__addinfo">2014, 1.8 Benzin, 199 000 km</p>
-                                        <p class="car-item__city"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> Kralovehradecky Kraj</p>
+                                        <p class="car-item__city"><i class="glyphicon glyphicon-map-marker"
+                                                                     aria-hidden="true"></i> Kralovehradecky Kraj</p>
                                     </div>
 
                                     <div class="car_item__info__bottom">
@@ -840,7 +851,8 @@
 
                                     <div class="car_item__info__center">
                                         <p class="car-item__addinfo">2014, 1.8 Benzin, 199 000 km</p>
-                                        <p class="car-item__city"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> Kralovehradecky Kraj</p>
+                                        <p class="car-item__city"><i class="glyphicon glyphicon-map-marker"
+                                                                     aria-hidden="true"></i> Kralovehradecky Kraj</p>
                                     </div>
 
                                     <div class="car_item__info__bottom">
@@ -884,7 +896,8 @@
                     <div role="tabpanel" class="tab-pane my-profile" id="tab3">
 
                         <div class="item">
-                            <p  data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+                            <p data-toggle="collapse" href="#collapse1" aria-expanded="false"
+                               aria-controls="collapseExample">
                                 Změnit kontaktní údaje
                                 <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
                             </p>
@@ -892,11 +905,13 @@
                                 <form>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                               placeholder="Email">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                               placeholder="Password">
                                     </div>
 
                                     <button type="submit">udržet</button>
@@ -904,7 +919,8 @@
                             </div>
                         </div>
                         <div class="item">
-                            <p  data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+                            <p data-toggle="collapse" href="#collapse2" aria-expanded="false"
+                               aria-controls="collapseExample">
                                 Změnit kontaktní údaje
                                 <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
                             </p>
@@ -912,18 +928,21 @@
                                 <form>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                               placeholder="Email">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                               placeholder="Password">
                                     </div>
                                     <button type="submit">udržet</button>
                                 </form>
                             </div>
                         </div>
                         <div class="item">
-                            <p  data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+                            <p data-toggle="collapse" href="#collapse3" aria-expanded="false"
+                               aria-controls="collapseExample">
                                 Změnit kontaktní údaje
                                 <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
                             </p>
@@ -931,18 +950,21 @@
                                 <form>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                               placeholder="Email">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                               placeholder="Password">
                                     </div>
                                     <button type="submit">udržet</button>
                                 </form>
                             </div>
                         </div>
                         <div class="item">
-                            <p  data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+                            <p data-toggle="collapse" href="#collapse4" aria-expanded="false"
+                               aria-controls="collapseExample">
                                 Změnit kontaktní údaje
                                 <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
                             </p>
@@ -950,18 +972,21 @@
                                 <form>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                               placeholder="Email">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                               placeholder="Password">
                                     </div>
                                     <button type="submit">udržet</button>
                                 </form>
                             </div>
                         </div>
                         <div class="item">
-                            <p  data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapseExample">
+                            <p data-toggle="collapse" href="#collapse5" aria-expanded="false"
+                               aria-controls="collapseExample">
                                 Změnit kontaktní údaje
                                 <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
                             </p>
@@ -969,29 +994,32 @@
                                 <form>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                               placeholder="Email">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                               placeholder="Password">
                                     </div>
                                     <button type="submit">udržet</button>
                                 </form>
                             </div>
                         </div>
                         <div class="item">
-                            <p  data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapseExample">
+                            <p data-toggle="collapse" href="#collapse6" aria-expanded="false"
+                               aria-controls="collapseExample">
                                 Smazat účet
                                 <i class="fa fa-angle-down pull-right" aria-hidden="true"></i>
                             </p>
                             <div class="collapse" id="collapse6">
-                                <p class="my-profile__del_p">Smazání účtu dojde po kliknutí na potvrzovací odkaz zaslaný e-mailem.</p>
+                                <p class="my-profile__del_p">Smazání účtu dojde po kliknutí na potvrzovací odkaz zaslaný
+                                    e-mailem.</p>
                                 <button class="red-btn">smazat účet</button>
                             </div>
                         </div>
 
                     </div>
-
 
 
                 </div>
@@ -1007,34 +1035,202 @@
 <div class="modal fade" id="car-sale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <h4 class="modal-title" id="myModalLabel">Přihlásit se</h4>
+            <h4>Prodat vůz</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
                     src="img/cross-out-copy.png" alt=""></button>
-            <button class="facebook-entry">Přihlásit přes facebook</button>
-            <p class="nebo">nebo</p>
 
-            <form action="#">
-                <div class="username">
-                    <label for="username">Uživatelské jméno</label>
-                    <a href="#" class="pull-right">Vytvořit účet</a>
-                    <input type="text" class="form-control" id="username" placeholder=" ">
+            <form action="#" class="dropzone">
+                <div class="item">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Stát</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Okres</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Okres</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Model</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Karoserie</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Stav</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="form-group">
+                        <label for="car-mileage">Najeto</label>
+                        <input class="form-control" type="text" id="car-mileage" placeholder="km">
+                    </div>
+                    <div class="form-group">
+                        <label for="car-year">Rok výroby</label>
+                        <select class="form-control custom" id="car-year">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Palivo</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Převodovka</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Prodejce</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">VIN</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="car-price">Cena</label>
+                        <input class="form-control" type="text" id="car-price" placeholder="Kč">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Popis vozu</label>
+
+                        <textarea class="form-control" id="text" name="text" maxlength="500"
+                                  placeholder="Type in your message" rows="5"></textarea>
+                        <span class="pull-right label label-default" id="count_message"></span>
+                    </div>
+                </div>
+                <div class="input-file">
+                    <div class="fallback">
+
+                        <input name="file" type="file" multiple />
+                    </div>
+                    <div class="dz-default dz-message">
+                        <img src="img/cloud-png.png" alt="">
+                        <p>
+                            Přetáhněte sem foto <br>
+                            nebo <span>procházet</span>
+                        </p>
+                    </div>
                 </div>
 
-                <div class="password form-group has-feedback">
-                    <label for="password">Heslo</label>
-                    <a href="#" class="pull-right">Zapomněli jste heslo?</a>
-                    <input type="password" class="form-control" id="password" data-toggle="password" placeholder=" ">
-                    <!--<input id="password" class="form-control" type="password" value="password"  >-->
-                    <span class="glyphicon glyphicon-eye-open form-control-feedback" aria-hidden="true"></span>
+                <div class="item">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <select class="form-control custom" id="exampleInputEmail1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
                 </div>
-
-
-                <button type="submit">Přihlásit se</button>
+                <div class="car-agree">
+                    <input type="checkbox" name="" id=""><p class="car_sale__agree">Prohlašuji, že jsem seznámen a souhlasím s
+                    <a target="_blank" href="#">Obchodní podmínky.</a></p>
+                </div>
+                <button type="submit">Přidat inzerát</button>
             </form>
-
         </div>
     </div>
 </div>
+
 <!-- POPUP SALE CAR -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -1042,7 +1238,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="modules/lightgallery/js/lightgallery.min.js"></script>
 
-
+<script src="js/dropzone.min.js"></script>
 
 <script src="js/custom.js"></script>
 

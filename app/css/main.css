@@ -1295,3 +1295,137 @@ p, img {
       margin-bottom: 12px; }
   .my-profile .collapse {
     padding-bottom: 20px; }
+
+#car-sale {
+  padding-left: 0 !important;
+  z-index: 99999; }
+  #car-sale .modal-content, #car-sale .modal-dialog {
+    width: 705px;
+    min-height: 895px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #fcfcfc; }
+  #car-sale .modal-content {
+    padding-bottom: 30px; }
+  #car-sale h4 {
+    color: #4e4e4e;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 12px;
+    padding-top: 25px;
+    margin-bottom: 25px; }
+  #car-sale .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.9; }
+  #car-sale form {
+    margin-left: 30px;
+    border: none;
+    padding: 0;
+    background: none; }
+    #car-sale form .item {
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 5px; }
+    #car-sale form .form-group {
+      display: inline-block;
+      margin-right: 6px; }
+      #car-sale form .form-group select, #car-sale form .form-group input {
+        width: 208px;
+        height: 34px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        border: 1px solid #d2d2d2; }
+    #car-sale form #car-mileage {
+      width: 127px; }
+    #car-sale form #car-mileage::-webkit-input-placeholder,
+    #car-sale form #car-price::-webkit-input-placeholder {
+      text-align: right; }
+    #car-sale form #car-year {
+      width: 70px; }
+    #car-sale form textarea {
+      width: 645px;
+      height: 150px;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border: 1px solid #d2d2d2;
+      padding-top: 10px;
+      padding-left: 12px;
+      color: #4f4f4f;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      resize: none; }
+    #car-sale form #textarea_feedback {
+      text-align: right;
+      margin-right: 22px;
+      color: #929292;
+      font-size: 13px; }
+    #car-sale form #count_message {
+      background-color: #4e4e4e;
+      padding-top: 4px;
+      margin-top: -24px;
+      margin-right: 10px; }
+    #car-sale form .input-file {
+      margin-bottom: 30px; }
+    #car-sale form .car-agree {
+      text-align: center; }
+      #car-sale form .car-agree input {
+        margin-right: 10px; }
+    #car-sale form .car_sale__agree {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: #929292;
+      display: inline-block; }
+      #car-sale form .car_sale__agree a {
+        color: #66bb6a; }
+    #car-sale form button {
+      width: 177px;
+      height: 40px;
+      display: block;
+      margin: 0 auto;
+      -webkit-box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+              box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      background-color: #4caf50;
+      border: none;
+      line-height: 0;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase; }
+
+.dz-message {
+  width: 370px;
+  height: 170px;
+  display: block;
+  margin: 0 auto !important;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px dashed #b0b0b0; }
+  .dz-message img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px; }
+  .dz-message p {
+    color: #929292;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px; }
+    .dz-message p span {
+      text-decoration: underline; }
+
+select.custom {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20fill%3D%22%23555555%22%20%0A%09%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-261%20145.2%2024%2024%22%20style%3D%22enable-background%3Anew%20-261%20145.2%2024%2024%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M-245.3%2C156.1l-3.6-6.5l-3.7%2C6.5%20M-252.7%2C159l3.7%2C6.5l3.6-6.5%22%2F%3E%0A%3C%2Fsvg%3E");
+  padding-right: 25px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  select.custom::-ms-expand {
+    display: none; }
