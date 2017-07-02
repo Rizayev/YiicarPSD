@@ -95,6 +95,11 @@ $(document).ready(function() {
             $('#car-sale').modal('show');
         },350);
     });
+    $('#car-sale .close').click(function () {
+        setTimeout(function () {
+            $('#my-cars').modal('show');
+        },350);
+    });
 //    POPUPS OPEN CLOSE
 //    animate #car-sale
     function testAnim(x) {
