@@ -101,7 +101,7 @@ $(document).ready(function() {
         $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
     };
     $('#car-sale').on('show.bs.modal', function (e) {
-        var anim = 'fadeInDown';
+        var anim = 'fadeInUp';
         testAnim(anim);
     });
     $('#car-sale').on('hide.bs.modal', function (e) {
