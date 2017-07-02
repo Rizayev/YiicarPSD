@@ -72,7 +72,7 @@ $(document).ready(function() {
     $('.my-profile .item p').on('click', function(e) {
         $(this).find('[class*="angle"]').toggleClass('fa-angle-up fa-angle-down')
     });
-    // $('#car-sale').modal();
+    $('#car-sale').modal();
 
 //    #car sale textarea
 

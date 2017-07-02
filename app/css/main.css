@@ -1340,11 +1340,15 @@ p, img {
         border: 1px solid #d2d2d2; }
     #car-sale form #car-mileage {
       width: 127px; }
+    #car-sale form #car-year {
+      width: 70px; }
+    #car-sale form #car-cl {
+      width: 127px; }
+    #car-sale form #car-year {
+      width: 70px; }
     #car-sale form #car-mileage::-webkit-input-placeholder,
     #car-sale form #car-price::-webkit-input-placeholder {
       text-align: right; }
-    #car-sale form #car-year {
-      width: 70px; }
     #car-sale form textarea {
       width: 645px;
       height: 150px;
@@ -1398,6 +1402,24 @@ p, img {
       font-size: 15px;
       font-weight: bold;
       text-transform: uppercase; }
+    #car-sale form .car-sale__more {
+      text-align: center;
+      font-size: 13px;
+      color: #4f4f4f;
+      margin-bottom: 15px;
+      cursor: pointer; }
+    #car-sale form .collapse .item {
+      display: block; }
+    #car-sale form .collapse .checkboxes {
+      margin-right: 33px; }
+      #car-sale form .collapse .checkboxes .cntr {
+        display: inline-block;
+        margin-right: 25px;
+        font-size: 13px;
+        color: #929292; }
+        #car-sale form .collapse .checkboxes .cntr label {
+          padding-top: 2px;
+          font-weight: 400; }
 
 .dz-message {
   width: 370px;
@@ -1429,3 +1451,102 @@ select.custom {
   appearance: none; }
   select.custom::-ms-expand {
     display: none; }
+
+.cbx {
+  position: relative;
+  top: 1px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #c8ccd4;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  vertical-align: middle;
+  -webkit-transition: background 0.1s ease;
+  -o-transition: background 0.1s ease;
+  transition: background 0.1s ease;
+  cursor: pointer; }
+  .cbx:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 5px;
+    height: 11px;
+    opacity: 0;
+    -webkit-transform: rotate(45deg) scale(0);
+        -ms-transform: rotate(45deg) scale(0);
+            transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transition-delay: 0.15s;
+         -o-transition-delay: 0.15s;
+            transition-delay: 0.15s; }
+
+.lbl {
+  vertical-align: middle;
+  cursor: pointer !important; }
+
+input.cbx:checked ~ .cbx {
+  border-color: transparent;
+  background: #48b257;
+  -webkit-animation: all 0.6s ease;
+          animation: all 0.6s ease; }
+  input.cbx:checked ~ .cbx:after {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) scale(1);
+        -ms-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1); }
+
+.cntr {
+  text-align: center; }
+  .cntr input {
+    display: none; }
+
+@-webkit-keyframes jelly {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  30% {
+    -webkit-transform: scale(1.25, 0.75);
+            transform: scale(1.25, 0.75); }
+  40% {
+    -webkit-transform: scale(0.75, 1.25);
+            transform: scale(0.75, 1.25); }
+  50% {
+    -webkit-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85); }
+  65% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05); }
+  75% {
+    -webkit-transform: scale(1.05, 0.95);
+            transform: scale(1.05, 0.95); }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
+
+@keyframes jelly {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  30% {
+    -webkit-transform: scale(1.25, 0.75);
+            transform: scale(1.25, 0.75); }
+  40% {
+    -webkit-transform: scale(0.75, 1.25);
+            transform: scale(0.75, 1.25); }
+  50% {
+    -webkit-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85); }
+  65% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05); }
+  75% {
+    -webkit-transform: scale(1.05, 0.95);
+            transform: scale(1.05, 0.95); }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }

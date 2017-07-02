@@ -36,7 +36,7 @@
             <div class="top-header__widget__menu">
                 <ul>
                     <li><a href="#">Moje vozy</a></li>
-                    <li><a href="#">Můj tarif</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#my-cars">Můj tarif</a></li>
                     <li><a href="#">Můj profil</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>Odhlásit se</a></li>
                 </ul>
@@ -673,9 +673,12 @@
                 <h4 class="modal-title">Moje garáž</h4>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a class="my-cars" href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Moje vozy</a></li>
-                    <li role="presentation"><a class="my-tariff" href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">Můj tarif</a></li>
-                    <li role="presentation"><a class="my-profile" href="#tab3" aria-controls="messages" role="tab" data-toggle="tab">Můj profil</a></li>
+                    <li role="presentation" class="active"><a class="my-cars" href="#tab1" aria-controls="home"
+                                                              role="tab" data-toggle="tab">Moje vozy</a></li>
+                    <li role="presentation"><a class="my-tariff" href="#tab2" aria-controls="profile" role="tab"
+                                               data-toggle="tab">Můj tarif</a></li>
+                    <li role="presentation"><a class="my-profile" href="#tab3" aria-controls="messages" role="tab"
+                                               data-toggle="tab">Můj profil</a></li>
                     <!--<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>-->
                 </ul>
 
@@ -685,7 +688,7 @@
                     <div role="tabpanel" class="tab-pane my-cars active" id="tab1">
 
                         <div class="my-cars__buttons">
-                            <button class="header--sell__btn" data-toggle="modal"  >+ Přidat auto </button>
+                            <button class="header--sell__btn" data-toggle="modal">+ Přidat auto</button>
                             <!--<button class="header&#45;&#45;sell__btn" data-toggle="modal" data-target="#car-sale">+ Přidat auto </button>-->
                             <div class="dropdown">
                                 <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
@@ -1175,10 +1178,305 @@
                         <span class="pull-right label label-default" id="count_message"></span>
                     </div>
                 </div>
+
+                <p class="car-sale__more" role="button" data-toggle="collapse" href="#collapseExample"
+                   aria-expanded="false" aria-controls="collapseExample">
+                    Další informace <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </p>
+                <div class="collapse" id="collapseExample">
+
+                    <div class="item">
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Palivo</label>
+                            <select class="form-control custom" id="exampleInputEmail1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Převodovka</label>
+                            <select class="form-control custom" id="exampleInputEmail1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="car-mileage">Najeto</label>
+                            <select class="form-control custom" id="car-mileage">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="car-year">Rok výroby</label>
+                            <select class="form-control custom" id="car-year">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="item">
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Palivo</label>
+                            <select class="form-control custom" id="exampleInputEmail1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Převodovka</label>
+                            <select class="form-control custom" id="exampleInputEmail1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="car-mileage">Najeto</label>
+                            <select class="form-control custom" id="car-mileage">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="car-year">Rok výroby</label>
+                            <select class="form-control custom" id="car-year">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="checkboxes">
+                            <div class="cntr">
+                                <input class="cbx" id="cbx" type="checkbox"/>
+                                <label class="cbx" for="cbx"></label>
+                                <label class="lbl" for="cbx">ABS</label>
+                            </div>
+                            <div class="cntr">
+                                <input class="cbx" id="cbx2" type="checkbox"/>
+                                <label class="cbx" for="cbx2"></label>
+                                <label class="lbl" for="cbx2">Tempomat</label>
+                            </div>
+                            <div class="cntr">
+                                <input class="cbx" id="cbx3" type="checkbox"/>
+                                <label class="cbx" for="cbx3"></label>
+                                <label class="lbl" for="cbx3">Elektrická zrcátka</label>
+                            </div>
+                            <div class="cntr">
+                                <input class="cbx" id="cbx4" type="checkbox"/>
+                                <label class="cbx" for="cbx4"></label>
+                                <label class="lbl" for="cbx4">Senzor deště</label>
+                            </div>
+                            <div class="cntr">
+                                <input class="cbx" id="cbx5" type="checkbox"/>
+                                <label class="cbx" for="cbx5"></label>
+                                <label class="lbl" for="cbx5">Parkovací asistent</label>
+                            </div>
+
+                        </div>
+                        <div class="checkboxes">
+                            <div class="cntr">
+                                <input class="cbx" id="cbx6" type="checkbox"/>
+                                <label class="cbx" for="cbx6"></label>
+                                <label class="lbl" for="cbx6">ESP</label>
+                            </div>
+                            <div class="cntr">
+                                <input class="cbx" id="cbx7" type="checkbox"/>
+                                <label class="cbx" for="cbx7"></label>
+                                <label class="lbl" for="cbx7">4x4 pohon</label>
+                            </div>
+                            <div class="cntr">
+                                <input class="cbx" id="cbx8" type="checkbox"/>
+                                <label class="cbx" for="cbx8"></label>
+                                <label class="lbl" for="cbx8">Elektrická okna</label>
+                            </div>
+                            <div class="cntr">
+                                <input class="cbx" id="cbx9" type="checkbox"/>
+                                <label class="cbx" for="cbx9"></label>
+                                <label class="lbl" for="cbx9">Stop Start system</label>
+                            </div>
+                            <div class="cntr">
+                                <input class="cbx" id="cbx10" type="checkbox"/>
+                                <label class="cbx" for="cbx10"></label>
+                                <label class="lbl" for="cbx10">Stop Start system</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <p class="car-sale__more" role="button" data-toggle="collapse" href="#collapseExample2"
+                       aria-expanded="false" aria-controls="collapseExample">
+                        Ještě <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </p>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="item">
+                            <h4>Exteriér</h4>
+                            <div class="checkboxes">
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx" type="checkbox"/>
+                                    <label class="cbx" for="cbx"></label>
+                                    <label class="lbl" for="cbx">Dálkové centrální zamykání</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx2" type="checkbox"/>
+                                    <label class="cbx" for="cbx2"></label>
+                                    <label class="lbl" for="cbx2">Denní světla</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx3" type="checkbox"/>
+                                    <label class="cbx" for="cbx3"></label>
+                                    <label class="lbl" for="cbx3">Senzor světel</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx4" type="checkbox"/>
+                                    <label class="cbx" for="cbx4"></label>
+                                    <label class="lbl" for="cbx4">Adaptivní světla</label>
+                                </div>
+                            </div>
+                            <div class="checkboxes">
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx" type="checkbox"/>
+                                    <label class="cbx" for="cbx"></label>
+                                    <label class="lbl" for="cbx">Mlhovky</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx2" type="checkbox"/>
+                                    <label class="cbx" for="cbx2"></label>
+                                    <label class="lbl" for="cbx2">Xenony</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx3" type="checkbox"/>
+                                    <label class="cbx" for="cbx3"></label>
+                                    <label class="lbl" for="cbx3">Tažné zařízení</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx4" type="checkbox"/>
+                                    <label class="cbx" for="cbx4"></label>
+                                    <label class="lbl" for="cbx4">Střešní nosiče</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>Interiér</h4>
+                            <div class="checkboxes">
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx" type="checkbox"/>
+                                    <label class="cbx" for="cbx"></label>
+                                    <label class="lbl" for="cbx">Hands-free</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx2" type="checkbox"/>
+                                    <label class="cbx" for="cbx2"></label>
+                                    <label class="lbl" for="cbx2">Head-up display</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx3" type="checkbox"/>
+                                    <label class="cbx" for="cbx3"></label>
+                                    <label class="lbl" for="cbx3">El. sedačky</label>
+                                </div>
+                            </div>
+                            <div class="checkboxes">
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx6" type="checkbox"/>
+                                    <label class="cbx" for="cbx6"></label>
+                                    <label class="lbl" for="cbx6">Vyhřívané sedačky</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx7" type="checkbox"/>
+                                    <label class="cbx" for="cbx7"></label>
+                                    <label class="lbl" for="cbx7">Panoramatická střecha</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx8" type="checkbox"/>
+                                    <label class="cbx" for="cbx8"></label>
+                                    <label class="lbl" for="cbx8">Kožený interiér</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>Sportovní výbava</h4>
+                            <div class="checkboxes">
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx" type="checkbox"/>
+                                    <label class="cbx" for="cbx"></label>
+                                    <label class="lbl" for="cbx">Sportovní úprava</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx2" type="checkbox"/>
+                                    <label class="cbx" for="cbx2"></label>
+                                    <label class="lbl" for="cbx2">Sportovní sedačky</label>
+                                </div>
+                            </div>
+                            <div class="checkboxes">
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx6" type="checkbox"/>
+                                    <label class="cbx" for="cbx6"></label>
+                                    <label class="lbl" for="cbx6">Sportovní interiér</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx7" type="checkbox"/>
+                                    <label class="cbx" for="cbx7"></label>
+                                    <label class="lbl" for="cbx7">Sportovní výfuk</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>Další</h4>
+                            <div class="checkboxes">
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx" type="checkbox"/>
+                                    <label class="cbx" for="cbx"></label>
+                                    <label class="lbl" for="cbx">Odpočet DPH</label>
+                                </div>
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx2" type="checkbox"/>
+                                    <label class="cbx" for="cbx2"></label>
+                                    <label class="lbl" for="cbx2">Leasing / úvěr</label>
+                                </div>
+
+                            </div>
+                            <div class="checkboxes">
+                                <div class="cntr">
+                                    <input class="cbx" id="cbx6" type="checkbox"/>
+                                    <label class="cbx" for="cbx6"></label>
+                                    <label class="lbl" for="cbx6">Servisní knížka</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="input-file">
                     <div class="fallback">
 
-                        <input name="file" type="file" multiple />
+                        <input name="file" type="file" multiple/>
                     </div>
                     <div class="dz-default dz-message">
                         <img src="img/cloud-png.png" alt="">
@@ -1222,8 +1520,9 @@
                     </div>
                 </div>
                 <div class="car-agree">
-                    <input type="checkbox" name="" id=""><p class="car_sale__agree">Prohlašuji, že jsem seznámen a souhlasím s
-                    <a target="_blank" href="#">Obchodní podmínky.</a></p>
+                    <input type="checkbox" name="" id="">
+                    <p class="car_sale__agree">Prohlašuji, že jsem seznámen a souhlasím s
+                        <a target="_blank" href="#">Obchodní podmínky.</a></p>
                 </div>
                 <button type="submit">Přidat inzerát</button>
             </form>
