@@ -660,10 +660,7 @@
 </div>
 <!-- POPUP -->
 
-<!--MODAL MY CARS -->
-
-
-<!-- Modal -->
+<!-- MODAL MY CARS -->
 <div class="modal fade" id="my-cars" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -1031,10 +1028,9 @@
         </div>
     </div>
 </div>
+<!-- MODAL MY CARS-->
 
-<!--MODAL MY CARS-->
-
-<!-- POPUP SALE CAR -->
+<!-- MODAL SALE CAR -->
 <div class="modal fade" id="car-sale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -1521,8 +1517,103 @@
         </div>
     </div>
 </div>
+<!-- MODAL SALE CAR -->
 
-<!-- POPUP SALE CAR -->
+<!-- MODAL TARIFF -->
+<div class="modal fade" id="car-tariff" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <h4>Vyberte tarif</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img
+                    src="img/cross-out-copy.png" alt=""></button>
+
+            <div class="tariff-items">
+                <div class="tariff-item">
+                    <div class="top">
+                        <span class="day">60 dnů</span>
+                        <span class="price">Zdarma</span>
+                    </div>
+                    <div class="down">
+                        <span class="max-cars">Max.vozů: 2</span>
+                        <span class="max-features">"Populární auto": 0</span>
+                        <button>Vybrat</button>
+                    </div>
+                </div>
+                <div class="tariff-item active">
+                    <div class="top">
+                        <span class="day">60 dnů</span>
+                        <span class="price">4999 Kč</span>
+                    </div>
+                    <div class="down">
+                        <span class="max-cars">Max.vozů: 10</span>
+                        <span class="max-features">"Populární auto": 3</span>
+                        <button>Vybrat</button>
+
+                        <span class="your-tariff"><img src="img/ok-png.png" alt="">Moudrá volba</span>
+                    </div>
+                </div>
+                <div class="tariff-item">
+                    <div class="top">
+                        <span class="day">60 dnů</span>
+                        <span class="price">4999 Kč</span>
+                    </div>
+                    <div class="down">
+                        <span class="max-cars">Max.vozů: 100</span>
+                        <span class="max-features">"Populární auto": 5</span>
+                        <button>Vybrat</button>
+                    </div>
+                </div>
+            </div>
+            <form action="#">
+
+                <div class="inputs">
+                    <h4>Fakturační údaje</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Název firmy</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Vaše jméno</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Vaše příjmení</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Váš telefon</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Váš telefon</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-agree">
+                    <input type="checkbox" name="" id="agree2">
+                    <p class="car_sale__agree"><label for="agree2">Prohlašuji, že jsem seznámen a souhlasím s
+                        <a target="_blank" href="#">Obchodní podmínky.</a></label></p>
+                </div>
+                <button type="submit">zaplatit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+<!-- MODAL TARIFF -->
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>

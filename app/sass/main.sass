@@ -1325,7 +1325,6 @@ p,img
             margin: 0
             padding-left: 5px
 
-      .checkboxes #first-checkbox
 .dz-message
   width: 370px
   height: 170px
@@ -1346,9 +1345,138 @@ p,img
       text-decoration: underline
 //CAR SELL MODAL
 
+#car-tariff
+  .modal-content,.modal-dialog
+    width: 705px
+    min-height: 1440px
+    border-radius: 3px
+    background-color: #fcfcfc
+  .modal-content
+    padding: 0 30px
+  h4
+    color: #4e4e4e
+    text-align: center
+    font-size: 25px
+    font-weight: 500
+    line-height: 12px
+    padding-top: 25px
+    margin-bottom: 40px
+  .close
+    position: absolute
+    top: 10px
+    right: 10px
+    opacity: 0.9
+  .tariff-items
+    margin: 0 auto
+    .tariff-item
+      width: 215px
+      box-shadow: 0 0 7px rgba(49, 49, 49, 0.12)
+      border-radius: 3px
+      background-color: #fcfcfc
 
-
-
+      display: inline-block
+      vertical-align: top
+      margin-left: -3px
+      position: relative
+      cursor: pointer !important
+      .top
+        height: 85px
+        background: #f5f5f5
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+        text-align: center
+        .day,.price
+          display: block
+        .day
+          color: #929292
+          font-size: 15px
+          padding-top: 21px
+          margin-bottom: 2px
+        .price
+          color: #4b4b4b
+          font-size: 17px
+          font-weight: 500
+      .down
+        height: 151px
+        text-align: center
+        .max-cars,.max-features
+          display: block
+          color: #929292
+          font-size: 13px
+          font-weight: 500
+        .max-cars
+          padding-top: 25px
+          margin-bottom: 15px
+        .max-features
+          margin-bottom: 20px
+        button
+          width: 135px
+          height: 33px
+          box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2)
+          border-radius: 5px
+          border: none
+          background-color: #4caf50
+          line-height: 0
+          color: #ffffff
+          font-size: 15px
+          font-weight: 700
+          text-transform: uppercase
+        .your-tariff
+          color: #4caf50
+          font-size: 15px
+          font-weight: bold
+          text-transform: uppercase
+          vertical-align: bottom
+          img
+            margin-right: 5px
+    & .active
+      z-index: 9
+      .top
+        background: #66bb6a
+        margin-top: -10px
+        height: 94px
+        .day,.price
+          color: #fff
+      .down
+        height: 161px
+        button
+          display: none
+  form
+    .inputs
+      input
+        width: 318px
+        height: 34px
+        border-radius: 5px
+        border: 1px solid #d2d2d2
+    .car-agree
+      text-align: center
+      input
+        margin-right: 10px
+    .car_sale__agree
+      font-size: 14px
+      font-weight: 400
+      margin-bottom: 10px
+      color: #929292
+      display: inline-block
+      cursor: pointer
+      a
+        color: #66bb6a
+      label
+        font-weight: 400
+    button
+      width: 177px
+      height: 40px
+      display: block
+      margin: 0 auto
+      box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2)
+      border-radius: 5px
+      background-color: #4caf50
+      border: none
+      line-height: 0
+      color: #ffffff
+      font-size: 15px
+      font-weight: bold
+      text-transform: uppercase
 ////////////
 ////////////
 
