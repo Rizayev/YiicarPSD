@@ -1480,84 +1480,86 @@ p, img {
 
 #car-tariff .tariff-items {
   margin: 0 auto; }
-  #car-tariff .tariff-items .tariff-item {
-    width: 215px;
-    -webkit-box-shadow: 0 0 7px rgba(49, 49, 49, 0.12);
-            box-shadow: 0 0 7px rgba(49, 49, 49, 0.12);
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
-    background-color: #fcfcfc;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: -3px;
-    position: relative;
-    cursor: pointer !important; }
-    #car-tariff .tariff-items .tariff-item .top {
-      height: 85px;
-      background: #f5f5f5;
-      -webkit-border-top-left-radius: 3px;
-              border-top-left-radius: 3px;
-      -webkit-border-top-right-radius: 3px;
-              border-top-right-radius: 3px;
-      text-align: center; }
-      #car-tariff .tariff-items .tariff-item .top .day, #car-tariff .tariff-items .tariff-item .top .price {
-        display: block; }
-      #car-tariff .tariff-items .tariff-item .top .day {
-        color: #929292;
-        font-size: 15px;
-        padding-top: 21px;
-        margin-bottom: 2px; }
-      #car-tariff .tariff-items .tariff-item .top .price {
-        color: #4b4b4b;
-        font-size: 17px;
-        font-weight: 500; }
-    #car-tariff .tariff-items .tariff-item .down {
-      height: 151px;
-      text-align: center; }
-      #car-tariff .tariff-items .tariff-item .down .max-cars, #car-tariff .tariff-items .tariff-item .down .max-features {
-        display: block;
-        color: #929292;
-        font-size: 13px;
-        font-weight: 500; }
-      #car-tariff .tariff-items .tariff-item .down .max-cars {
-        padding-top: 25px;
-        margin-bottom: 15px; }
-      #car-tariff .tariff-items .tariff-item .down .max-features {
-        margin-bottom: 20px; }
-      #car-tariff .tariff-items .tariff-item .down button {
-        width: 135px;
-        height: 33px;
-        -webkit-box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
-                box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
-        -webkit-border-radius: 5px;
-                border-radius: 5px;
-        border: none;
-        background-color: #4caf50;
-        line-height: 0;
-        color: #ffffff;
-        font-size: 15px;
-        font-weight: 700;
-        text-transform: uppercase; }
-      #car-tariff .tariff-items .tariff-item .down .your-tariff {
-        color: #4caf50;
-        font-size: 15px;
-        font-weight: bold;
-        text-transform: uppercase;
-        vertical-align: bottom; }
-        #car-tariff .tariff-items .tariff-item .down .your-tariff img {
-          margin-right: 5px; }
-  #car-tariff .tariff-items .active {
-    z-index: 9; }
-    #car-tariff .tariff-items .active .top {
-      background: #66bb6a;
-      margin-top: -10px;
-      height: 94px; }
-      #car-tariff .tariff-items .active .top .day, #car-tariff .tariff-items .active .top .price {
-        color: #fff; }
-    #car-tariff .tariff-items .active .down {
-      height: 161px; }
-      #car-tariff .tariff-items .active .down button {
-        display: none; }
+
+#car-tariff .tariff-item {
+  width: 215px;
+  -webkit-box-shadow: 0 0 7px rgba(49, 49, 49, 0.12);
+          box-shadow: 0 0 7px rgba(49, 49, 49, 0.12);
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #fcfcfc;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -3px;
+  position: relative;
+  cursor: pointer !important; }
+  #car-tariff .tariff-item .top {
+    height: 85px;
+    background: #f5f5f5;
+    -webkit-border-top-left-radius: 3px;
+            border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+            border-top-right-radius: 3px;
+    text-align: center; }
+    #car-tariff .tariff-item .top .day, #car-tariff .tariff-item .top .price {
+      display: block; }
+    #car-tariff .tariff-item .top .day {
+      color: #929292;
+      font-size: 15px;
+      padding-top: 21px;
+      margin-bottom: 2px; }
+    #car-tariff .tariff-item .top .price {
+      color: #4b4b4b;
+      font-size: 17px;
+      font-weight: 500; }
+  #car-tariff .tariff-item .down {
+    height: 151px;
+    text-align: center; }
+    #car-tariff .tariff-item .down .max-cars, #car-tariff .tariff-item .down .max-features {
+      display: block;
+      color: #929292;
+      font-size: 13px;
+      font-weight: 500; }
+    #car-tariff .tariff-item .down .max-cars {
+      padding-top: 25px;
+      margin-bottom: 15px; }
+    #car-tariff .tariff-item .down .max-features {
+      margin-bottom: 20px; }
+    #car-tariff .tariff-item .down button {
+      width: 135px;
+      height: 33px;
+      -webkit-box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+              box-shadow: 0 2px 17px rgba(27, 94, 32, 0.2);
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border: none;
+      background-color: #4caf50;
+      line-height: 0;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    #car-tariff .tariff-item .down .your-tariff {
+      color: #4caf50;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      vertical-align: bottom; }
+      #car-tariff .tariff-item .down .your-tariff img {
+        margin-right: 5px; }
+
+#car-tariff .active {
+  z-index: 9; }
+  #car-tariff .active .top {
+    background: #66bb6a;
+    margin-top: -10px;
+    height: 94px; }
+    #car-tariff .active .top .day, #car-tariff .active .top .price {
+      color: #fff; }
+  #car-tariff .active .down {
+    height: 161px; }
+    #car-tariff .active .down button {
+      display: none; }
 
 #car-tariff form .inputs input {
   width: 318px;
