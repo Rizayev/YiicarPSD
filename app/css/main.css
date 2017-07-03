@@ -1383,9 +1383,12 @@ p, img {
       font-weight: 400;
       margin-bottom: 20px;
       color: #929292;
-      display: inline-block; }
+      display: inline-block;
+      cursor: pointer; }
       #car-sale form .car_sale__agree a {
         color: #66bb6a; }
+      #car-sale form .car_sale__agree label {
+        font-weight: 400; }
     #car-sale form button {
       width: 177px;
       height: 40px;
