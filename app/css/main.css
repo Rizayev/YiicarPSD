@@ -1410,16 +1410,25 @@ p, img {
       cursor: pointer; }
     #car-sale form .collapse .item {
       display: block; }
-    #car-sale form .collapse .checkboxes {
-      margin-right: 33px; }
-      #car-sale form .collapse .checkboxes .cntr {
-        display: inline-block;
-        margin-right: 25px;
+      #car-sale form .collapse .item h4 {
+        color: #4f4f4f;
         font-size: 13px;
-        color: #929292; }
-        #car-sale form .collapse .checkboxes .cntr label {
-          padding-top: 2px;
-          font-weight: 400; }
+        margin-bottom: 20px; }
+    #car-sale form .collapse .checkboxes .cntr {
+      font-size: 13px;
+      color: #929292;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 25px;
+      width: 190px; }
+      #car-sale form .collapse .checkboxes .cntr label {
+        padding-top: 2px;
+        font-weight: 400;
+        float: left; }
+      #car-sale form .collapse .checkboxes .cntr label + label {
+        padding: 0;
+        margin: 0;
+        padding-left: 5px; }
 
 .dz-message {
   width: 370px;
