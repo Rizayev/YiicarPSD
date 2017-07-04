@@ -1657,7 +1657,8 @@ p, img {
 
 #car-tariff .tariff-summ-items .tarif-sum-close {
   margin-left: -40px;
-  width: 15px; }
+  width: 15px;
+  cursor: pointer; }
 
 #car-tariff .tariff-summ-items .tariff-total {
   margin-top: 20px; }
